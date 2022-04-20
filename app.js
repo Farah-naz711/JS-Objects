@@ -1442,8 +1442,42 @@
 
 // var num = 35.36 ;
 // document.write("Given Number is "+num +"<br>");
-// var withoutDot=num.toString().replace(".","");
-// document.write(withoutDot);
+// var withoutDot1=num.toString().replace(/./g,"");
+// document.write(withoutDot1);
+
+//OR
+
+        
+//         var num=35.36, c=0;
+//         var toStr=num;
+//         document.write(num+"<br><br>")
+//      var str=num.toString();
+//      for(var i=0; i<str.length; i++)
+//      {
+//          if(str[i]=='.')
+//          {
+             
+//                 break;
+//          }
+//          else
+//          {
+//              c=c+1;
+//          }
+//      }
+//      var ten=1;
+//        for(var i=c+1; i<str.length; i++)
+//        {
+//            ten=ten*10;
+//            document.write(i+" "+ten+"<br>")
+//        }
+//        toStr=toStr*ten; 
+//        document.write("Given is floating point number "+num)
+// document.write("<br><br>Result is "+toStr.toString());
+
+
+    
+
+
 
 
 // Q13. Write a program to take user input and store username
@@ -1581,3 +1615,153 @@
 
 // }
 // console.log("Occurence of the word 'the' Or 'The' is "+a+" times");
+
+
+
+        //   ---------Math Methods-----------
+
+
+// Question1:1. Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+
+// var num=+prompt("Enter a positiver integer:")
+
+// if(num<=0)
+// {
+//         alert("Please Enter a Postive Integer")
+//         window.location.reload();
+// }
+// console.log("Your Entered number is "+num);
+
+
+// // b. round off value of the number
+
+// var round=Math.round(num)
+// console.log("Rounded off value is "+round);
+
+// // c. floor value of the number
+
+// var floor=Math.floor(num);
+// console.log("Floor value is "+floor);
+
+
+// // d. ceil value of the number
+
+// var ceil=Math.ceil(num)
+// console.log("Ceil Value is "+ceil);
+
+
+
+// Question:2. Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+
+// var negNum=+prompt("Enter a negative number");
+// if(negNum>=0)
+// {
+//         alert("Enter a Negative Number");
+//         window.location.reload();
+// }
+// console.log("Your Entered Number is "+negNum);
+
+
+// // b. round off value of the number
+
+// var round=Math.round(negNum);
+// console.log("Round Off Value is "+round);
+
+// // c. floor value of the number
+
+// var floor=Math.floor(negNum);
+// console.log("Floor Value is  "+floor);
+
+// // d. ceil value of the number
+
+// var ceil=Math.ceil(negNum);
+// console.log("Ceil Value is "+ceil);
+
+
+
+// Question3. Write a program that displays the absolute value of a number. E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+// var num=+prompt("Enter a value");
+// var abs=Math.abs(num);
+// console.log("Your Entered Number is "+num);
+// console.log("Absolute value of the number is "+abs);
+
+
+
+// Question4. Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your browser.:
+
+// var random=Math.random();
+// var dice=Math.floor(random*6)+1;
+// console.log("Random dice value is "+dice);
+
+
+
+// Question5. Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your browser
+
+
+// var rand=Math.random();
+// var n=Math.floor(rand*2)+1
+// console.log(n)
+// if(n==1)
+// {
+//         console.log("Random coin value :Heads");
+// }
+// else
+// {
+//         console.log("Random coin value :Tails");
+// }
+
+
+
+// Question6. Write a program that shows a random number between 1 and 100 in your browser.
+
+
+// var rand=Math.random();
+// var randomValue=Math.floor(rand*100)+1;
+
+// console.log("Random number between 1 and 100 is : "+randomValue)
+
+
+//Question7. Write a program that asks the user about his weight. Parse the user input and display his weight in your browser. Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+
+// var weight=prompt("Enter your weight (kgs/kilograms)");
+// var parse=parseFloat(weight);
+
+// console.log("The weight of the user is "+parse+" kilograms")
+
+
+
+// Question8. Write a program that stores a random secret number from 1 to 10 in a variable. Ask the user to input a number between 1 and 10. If the user input equals the secret number, congratulate the user.
+
+
+// var random=Math.floor(Math.random()*10)+1;
+// var userNum=+prompt("Enter the number from 1 to 10");
+// console.log(random)
+// if(userNum>10)
+// {
+        
+//         window.location.reload();
+// }
+// else
+// {
+//         if(userNum===random)
+//         {
+//                 console.log("Congratulations! Your Number Matched with the Secret Number");
+
+//         }
+//         else
+//         {
+//                 console.log("Not Matched")
+//         }
+// }
+
+
