@@ -1821,8 +1821,10 @@
 
 
 // var miliSec= new Date().getTime();
-// var minSince1970  = Math.ceil(miliSec/1000)
-console.log();
+// var minSince1970  = miliSec/(1000 * 60 *60);
+// console.log("Minutes Since Jan 1970 midnight "+minSince1970);
+
+
 
 
 
@@ -1831,12 +1833,12 @@ console.log();
 
 
 // var hour = new Date().getHours();
-// if(hour === 00)
+// if(hour >= 00 && hour <=12)
 // {
-//         alert("Its AM");
+//         alert("Its PM");
 // }
 // else{
-//         alert("Its PM");
+//         alert("Its AM");
 // }
 
 
@@ -1851,18 +1853,69 @@ console.log();
 
 // 9. Create a date object of the starting date of this Ramadan and alert the number of days past since 1st Ramadan? Note: 1st Ramadan was on June 18, 2015
 
-var days = new 
+
+
+// var days = new Date(2015,5,18);
+// var sinceRamzan = days.getTime();
+// var present = new Date().getTime();
+// var diff = present - sinceRamzan;
+// var daysSinceRamzan = Math.floor(diff/(1000*60*60*24));
+// console.log(daysSinceRamzan + "Days Passed Since Ramzan 2015 ");
+
+
 
 
 // 10. Write a program that displays in your browser the seconds that elapsed between the reference date and the beginning of 2015. 
+
+
+
+// var previousDate = new Date(2022,4,15).getTime();
+// var presentDate = new Date().getTime();
+// var dif  = presentDate - previousDate;
+// var sec = Math.floor(dif/(1000));
+// console.log(sec+" days passed Since 2015");
+
+
+
+
 // 11. Create a Date object for the current date and time. Extract the hours, reset the date object an hour ahead and finally display the date object in your browser.
+
+
+// var date = new Date();
+// var extractHour = date.getHours();
+// // var update =( extractHour+1) ;
+// var d = date.setHours(extractHour-1);
+// console.log("Current Date "+new Date());
+// console.log("One Hour Ago It Was "+date);
+
+
+
 // 12. Write a program that creates a date object and show the date in an alert box that is reset to 100 years back?
+
+
+// var date = new Date();
+// var d = date.getFullYear();
+// var hundYearsBack = d - 100;
+// var updated = date.setFullYear(hundYearsBack);
+
+// alert("Current Date "+new Date())
+// alert("100 Years Back it was "+date);
+
+
+
 // 13. Write a program to ask the user about his age. Calculate and show his birth year in your browser.
+
+
+// var age = +prompt("Enter your Age");
+// var  year = new Date().getFullYear();
+// var yearAge = year - age;
+// console.log("Your Age is "+age);
+// console.log("Your Birth Year is "+yearAge);
+
+
 // 14. Write a program to generate your K-Electric bill in your browser. All the amounts should be rounded off to 2 decimal places. Display the following fields:
 // a. Customer Name
 // b. Current Month
-// DATE METHODS | JAVASCRIPT
-// Page 5 of 5
 // c. Number of units
 // d. Charges per unit
 // e. Net Amount Payable (within Due Date)
@@ -1872,7 +1925,27 @@ var days = new
 // & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
 
 
-// **********************Funtions************************************
+
+// var customerName = prompt("Enter Customer Name");
+// var numOfUnit = +prompt("Enter Number Of Units ");
+// var chargesPerUnit = +prompt("Enter Charges Per Unit ");
+// var d = String(new Date())
+// var mnth = d.slice(3,7);
+// var latePayment=350;
+// var netAmount = numOfUnit * chargesPerUnit;
+// var grossAmount = netAmount + latePayment;
+// var mnth =String(new Date()).slice(3,3);
+// document.write("<h1>K-Electric bill</h1>");
+// document.write("<br> Customer Name "+"<b>"+customerName+"</b>");
+// document.write("<br> Current Month "+mnth);
+// document.write("<br> Number of units "+"<b>"+numOfUnit+"</b>")
+// document.write("<br> Charges per unit "+"<b>"+chargesPerUnit+"</b>")
+// document.write("<br><br><br>Net Amount Payable (within Due Date) "+"<b>"+netAmount.toFixed(2)+"</b>");
+// document.write("<br> Late Payment Surcharge "+"<b>"+latePayment+"</b>");
+// document.write("<br> Gross Amount Payable (after Due Date) "+"<b>"+grossAmount.toFixed(2)+"</b>");
+
+
+// **********************Funtions***********************************
 
 // Q1. Write a function that displays current date & time in your browser.
 
@@ -1920,9 +1993,7 @@ var days = new
 
 
 // Q4. Calculator:
-// Write a function that takes three arguments num1, num2
-// & operator & compute the desired operation. Return and
-// show the desired result in your browser.
+// Write a function that takes three arguments num1, num2 & operator & compute the desired operation. Return and show the desired result in your browser.
 
 
 // function opFunc(num1 = 0,operator,num2 = 0)
