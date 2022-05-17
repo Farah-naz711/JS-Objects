@@ -2131,30 +2131,23 @@
 // Q10. Write a JavaScript function that checks whether a passed string is palindrome or not? A palindrome is word phrase, or sequence that reads the same backward as forward, e.g., madam.
 
 
-// function palindrome(str){
-// var flag=0;
-// if(str==="")
-// {
-//         console.log("Not a valid string");
-
-// }
-// else{
-//         for(var i=0,j=str.lenght-1; i<str.lenght; i++,j--)
-//         {
-//                 if(str[i]===str[j]);
-//                 {
-//                         flag= 1;
-//                 }
+// function palindrome(str) {
+//         var re = /[^A-Za-z0-9]/g;
+//         str = str.toLowerCase().replace(re, '');
+//         var len = str.length;
+//         for (var i = 0; i < len/2; i++) {
+//           if (str[i] !== str[len - 1 - i]) {
+//               return false;
+//           }
 //         }
-// }
-// if(flag==0)
-// {
-//         console.log("Strin is not a palindrome");
-// }
-
-// }
-// var str = prompt("Enter a string to check whether the string is palindrome or not");
-// palindrome(str);
+//         return true;
+//        }
+//        var str = prompt("Enter a string to check whether the string is palindrome or not");
+//        if(palindrome(str)){
+//                console.log("Palindrome");
+        
+//        }
+//        else console.log("String is not a palindrome");
 
 
 // Q11. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
