@@ -2154,33 +2154,55 @@
 // EXAMPLE STRING : 'the quick brown fox'
 // EXPECTED OUTPUT : 'The Quick Brown Fox'
 
-// function firstUpper(str){
-// var ind;
-//         for(var i=0; i<str.length; i++)
+
+
+
+// function firsLetter(str){
+
+//         var arr = str.split(" ");
+//         var newArr=[]
+//         for(var i =0; i < arr.length; i++)
 //         {
-//                 // if(str[i]==" " )
-//                 // {
-//                 //       var upper =  str[i+1].toUpperCase();
-//                 // }
-//                ind = str[i].indexOf(" ");
-//                return ind;
-//                 // str[ind+1].toUpperCase();
+//                 arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+
 //         }
-
-        // var first = str.slice(0,1).toUpperCase();
-//         console.log(first);
-//         ind = str.indexOf(" ");console.log(ind);
-//         ++ind;
-//         var oth= str.slice(ind,1).toUpperCase(); 
-//         console.log(oth);
-//         // return first;
-
+//         var str2 = arr.join(" ");
+// return str2;
 // }
+
 // var str = 'the quick brown fox';
+
+
 // console.log("Given String is "+str);
 
-// console.log("String After changes  "+firstUpper(str));
+// console.log("String After changes  "+firsLetter(str));
 
+
+// 12. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+// EXAMPLE STRING : 'Web Development Tutorial'
+// EXPECTED OUTPUT : 'Development'
+
+
+// function longestWord(str){
+
+// var arr= str.split(" "); var len=0;
+// for(var i =0; i<str.split(" ").length; i++)
+// {
+//         if(arr[i].length > len){
+
+//                 len = arr[i].length;
+//                 // console.log(arr[i])
+//                 console.log(len)
+//         }
+// }
+
+// }
+
+// var str = "Web Development Tutorial";
+// longestWord(str);
+
+
+// 13. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of function occurrences of the specified letter within the string.Sample arguments : 'JSResourceS.com', 'o'
 
 
 // 14. The Geometrizer Create 2 functions that calculate properties of a circle, using the definitions here. Create a function called calcCircumference:
