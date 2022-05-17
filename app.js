@@ -1764,4 +1764,385 @@
 //         }
 // }
 
+// *******************************Date Methods()*********************
 
+// 1. Write a program that displays current date and time in your browser.
+
+// var date = new Date();
+// console.log("Current Date and Time "+date);
+
+
+// 2. Write a program that alerts the current month in words. For example December.
+
+
+// var mnth = ["January", "February","March","April","May","June","July","August","September","October","November","December"]
+// var month = new Date().getMonth();
+
+// console.log("Current Month in words "+mnth[month]);
+
+
+// 3. Write a program that alerts the first 3 letters of the current day, for example if today is Sunday then alert will show Sun.
+
+// var dt = new Date();
+// var day =String(dt).slice(0,3);
+// alert("Today is "+day);
+
+
+// 4. Write a program that displays a message “It’s Fun day” if its Saturday or Sunday today.DATE METHODS | JAVASCRIPT Page 2 of 5
+
+// var dt = new Date();
+// var day =String(dt).slice(0,3);
+// if(day ==="Sat" || day === "Sun"){
+
+//         console.log("Its a Fun day");
+// }
+// else
+// console.log("Working Day");
+
+
+// 5. Write a program that shows the message “First fifteen days of the month” if the date is less than 16th of the month else shows “Last days of the month”.
+
+
+// var dt = new Date().getDate();
+// console.log(dt);
+// if(dt<16)
+// {
+        
+//                 console.log("First fifteen days of the month");
+        
+// }
+// else {
+        
+//        console.log("Last Days Of The Month");
+// }
+
+
+// 6. Write a program that determines the minutes since midnight, Jan. 1, 1970 and assigns it to a variable that hasn't been declared beforehand. Use any variable you like to represent the Date object.
+
+
+// var miliSec= new Date().getTime();
+// var minSince1970  = Math.ceil(miliSec/1000)
+console.log();
+
+
+
+
+// 7. Write a program that tests whether it's before noon and alert “Its AM” else “its PM”. 
+
+
+// var hour = new Date().getHours();
+// if(hour === 00)
+// {
+//         alert("Its AM");
+// }
+// else{
+//         alert("Its PM");
+// }
+
+
+
+
+// 8. Write a program that creates a Date object for the last day of the last month of 2020 and assigns it to variable named laterDate.
+
+
+// var laterDate = new Date("Thur Dec 31 2020");
+// console.log(laterDate);
+
+
+// 9. Create a date object of the starting date of this Ramadan and alert the number of days past since 1st Ramadan? Note: 1st Ramadan was on June 18, 2015
+
+var days = new 
+
+
+// 10. Write a program that displays in your browser the seconds that elapsed between the reference date and the beginning of 2015. 
+// 11. Create a Date object for the current date and time. Extract the hours, reset the date object an hour ahead and finally display the date object in your browser.
+// 12. Write a program that creates a date object and show the date in an alert box that is reset to 100 years back?
+// 13. Write a program to ask the user about his age. Calculate and show his birth year in your browser.
+// 14. Write a program to generate your K-Electric bill in your browser. All the amounts should be rounded off to 2 decimal places. Display the following fields:
+// a. Customer Name
+// b. Current Month
+// DATE METHODS | JAVASCRIPT
+// Page 5 of 5
+// c. Number of units
+// d. Charges per unit
+// e. Net Amount Payable (within Due Date)
+// f. Late Payment Surcharge
+// g. Gross Amount Payable (after Due Date)
+// Where,Net Amount Payable (within Due Date) = Number of units * Charges per unit
+// & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge
+
+
+// **********************Funtions************************************
+
+// Q1. Write a function that displays current date & time in your browser.
+
+// function date()
+// {
+//         var d = new Date;
+//         console.log(d);
+
+// }
+
+// console.log("Current Date and Time");
+// date();
+
+
+// Q2. Write a function that takes first & last name and then it greets the user using his full name.
+
+
+// function greet(firstName = " " , lastName = " ")
+// {
+// alert("Hello , "+firstName+" "+ lastName);
+// }
+
+// var firstName = prompt("Enter your First Name");
+// var lastName = prompt("Enter your Last Name");
+
+// greet(firstName,lastName);
+
+
+
+// Q3. Write a function that adds two numbers (input by user) and returns the sum of two numbers.
+
+
+// function sum(num1,num2){
+//         var sumOfNums = num1 + num2;
+//         return sumOfNums;
+
+// }
+
+
+// var num1 = +prompt("Enter 1st Number");
+// var num2 = +prompt("Enter 2nd Number");
+
+// console.log("Sum of two Numbers is "+sum(num1,num2));
+
+
+
+// Q4. Calculator:
+// Write a function that takes three arguments num1, num2
+// & operator & compute the desired operation. Return and
+// show the desired result in your browser.
+
+
+// function opFunc(num1 = 0,operator,num2 = 0)
+// {var result;
+
+//         switch(operator){
+//         case '+':  console.log("Addition"); result = num1 + num2; break;
+//         case '-': console.log("Substraction"); result = num1 - num2; break;
+//         case '*':  console.log("Multipication"); result = num1 * num2; break;
+//         case '/':  console.log("Division"); result = num1 / num2; break;
+//         case '%':  console.log("Modulus"); result = num1 % num2; break;
+//         default :console.log("Invalid Operator");
+// }
+// return result;
+// }
+// var num1 = +prompt("Enter a number");
+// var num2 = +prompt("Enter second number");
+// var operator = prompt("Enter operator");
+
+// console.log("Result is "+opFunc(num1,operator,num2));
+        
+
+
+// Q5. Write a function that squares its argument.
+
+
+// function square(num)
+// {
+//         var sq = num*num;
+//         console.log(sq);
+
+// }
+// var num = +prompt("Enter a number to find its square");
+// square(num);
+
+
+
+// Q6. Write a function that computes factorial of a number.
+
+
+
+// function facto(num)
+// {
+// //7 
+// // 1 * 2 * 3 * 4 * 5 * 6 * 7
+//        var  fac = 1;
+//         for(var i=1; i<=num; i++)
+//         {
+//               fac *=i;
+                
+//         }
+//         num= fac;
+//         console.log(num);
+// }
+// var num = +prompt("Enter a number to find its factorial");
+// facto(num);
+
+
+// Q7. Write a function that take start and end number as inputs & display counting in your browser.
+
+
+// function counting(start,end)
+// {
+
+//         if(!start || !end)
+//         {
+//                 console.log("Enter a number");
+//         }
+//         else {
+//                 console.log("Counting from "+start+" to "+end);
+//                 for(var i=start; i<=end; i++)
+//                 {
+//                         console.log(i);
+//                 }
+//         }
+      
+// }
+// var start = +prompt("Enter start point to display counting");
+// var end = +prompt("Enter end point of the counting");
+// counting(start,end);
+
+
+// Q8. Write a nested function that computes hypotenuse of aright angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2 Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+
+
+// function calculateHypotenuse(base,perpendicular){
+
+
+
+// var base2 = calculateSquare(base);
+// var perpendicular2 = calculateSquare(perpendicular);
+
+// var hypotenuse = base2 + perpendicular2;
+// return hypotenuse;
+//         function  calculateSquare(sq){
+// return square = sq * sq;
+//         }
+
+// }
+
+
+// var base = +prompt("Enter a base ");
+// var perpendicular= +prompt("Enter a perpendicular");
+//  var hyp = calculateHypotenuse(base,perpendicular);
+
+// console.log("Hypotenuse of a right angle triangle is "+ hyp);
+
+
+// Q9. Write a function that calculates the area of a rectangle.
+// A = width * height
+// Pass width and height in following manner:
+// i. Arguments as value
+// ii. Arguments as variables
+
+
+// function areaOfRectangle(width,height){
+
+//         var area = width * height;
+//         return area;
+
+
+// }
+
+// console.log("Area Of A Rectangle");
+// // console.log(areaOfRectangle(7,4));  /////  Argument as a value
+
+// var width =7, height = 4;
+// console.log(areaOfRectangle(width,height));  ///Argument as a variable
+
+
+// Q10. Write a JavaScript function that checks whether a passed string is palindrome or not? A palindrome is word phrase, or sequence that reads the same backward as forward, e.g., madam.
+
+
+// function palindrome(str){
+// var flag=0;
+// if(str==="")
+// {
+//         console.log("Not a valid string");
+
+// }
+// else{
+//         for(var i=0,j=str.lenght-1; i<str.lenght; i++,j--)
+//         {
+//                 if(str[i]===str[j]);
+//                 {
+//                         flag= 1;
+//                 }
+//         }
+// }
+// if(flag==0)
+// {
+//         console.log("Strin is not a palindrome");
+// }
+
+// }
+// var str = prompt("Enter a string to check whether the string is palindrome or not");
+// palindrome(str);
+
+
+// Q11. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+// function firstUpper(str){
+// var ind;
+//         for(var i=0; i<str.length; i++)
+//         {
+//                 // if(str[i]==" " )
+//                 // {
+//                 //       var upper =  str[i+1].toUpperCase();
+//                 // }
+//                ind = str[i].indexOf(" ");
+//                return ind;
+//                 // str[ind+1].toUpperCase();
+//         }
+
+        // var first = str.slice(0,1).toUpperCase();
+//         console.log(first);
+//         ind = str.indexOf(" ");console.log(ind);
+//         ++ind;
+//         var oth= str.slice(ind,1).toUpperCase(); 
+//         console.log(oth);
+//         // return first;
+
+// }
+// var str = 'the quick brown fox';
+// console.log("Given String is "+str);
+
+// console.log("String After changes  "+firstUpper(str));
+
+
+
+// 14. The Geometrizer Create 2 functions that calculate properties of a circle, using the definitions here. Create a function called calcCircumference:
+// • Pass the radius to the function.
+// • Calculate the circumference based on the radius, and output
+// "The circumference is NN".
+// Create a function called calcArea:
+// • Pass the radius to the function.
+// • Calculate the area based on the radius, and output "The area
+// is NN".
+// Circumference of circle = 2πr
+// Area of circle = πr2
+
+
+// function calcCircumference(radius)
+// {
+
+//         var circumferenceOfCircle = 2 * 3.14 * radius;
+//         console.log("The circumference is" +circumferenceOfCircle);
+// }
+
+// function calcArea(radius){
+
+// var areaOfCircle = 3.14*radius*radius;
+//         console.log("The area is "+areaOfCircle);
+// }
+// var radius = +prompt("Enter the radius to calculate the Circumference and Area");
+// calcCircumference(radius);
+// calcArea(radius);
