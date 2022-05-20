@@ -2192,17 +2192,55 @@
 
 //                 len = arr[i].length;
 //                 // console.log(arr[i])
-//                 console.log(len)
 //         }
+     
 // }
+// return len;
 
 // }
 
 // var str = "Web Development Tutorial";
-// longestWord(str);
+// console.log("Given String : "+str);
+// var expectedOutputLen = longestWord(str);
+// var arr= str.split(' ');
+// for(var i=0; i<arr.length; i++)
+// {
+//         if(arr[i].length == expectedOutputLen)
+//         {
+
+//                 console.log("Output : "+arr[i]);
+//         }
+// }
+
+
 
 
 // 13. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of function occurrences of the specified letter within the string.Sample arguments : 'JSResourceS.com', 'o'
+
+
+// function countOccurence(str,letter)
+// {
+//         var count =0;
+//         for(var i=0; i<str.length; i++)
+//         {
+//                 if(str[i]===letter)
+//                 {
+//                         count++;
+//                 }
+//         }
+        
+//         console.log(letter +" occurred "+count+" times");
+// }
+
+// var str = prompt("Enter the string");
+// var letter;
+// if(str)
+// {
+//          letter = prompt("Enter the letter to to find the occurence in the string ");
+// }
+// countOccurence(str,letter);
+
+
 
 
 // 14. The Geometrizer Create 2 functions that calculate properties of a circle, using the definitions here. Create a function called calcCircumference:
