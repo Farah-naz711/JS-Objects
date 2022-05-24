@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box !important;
+}
+.table-sec{
+    text-align: center;
+}
+.img-contaier{
+    width: max-content;
+    height:  500px;text-align: center;
+}
+.showDetails-container p{
+    display: none;
+}

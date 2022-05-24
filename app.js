@@ -2270,3 +2270,268 @@
 // var radius = +prompt("Enter the radius to calculate the Circumference and Area");
 // calcCircumference(radius);
 // calcArea(radius);
+
+
+
+
+
+// ********************************** Assignment # 38-44 ***********************
+// ****************FUNCTIONS| SWITCH | WHILE.. DO-WHILE******************
+
+
+
+
+
+// 1. Write a custom function power ( a, b ), to calculate the value of a raised to b.
+
+
+// function power(a , b)
+// {
+//         var result =  Math.pow(a,b);
+
+//         return result;
+// }
+// var a = +prompt("Enter the value of a number ");
+// var b =+prompt("Enter the power of a number "+ a);
+// var result = power(a,b);
+// console.log("Number = "+a );
+// console.log("Power = "+b );
+// console.log("Result of ' a ' power ' b ' is ", result);
+
+
+
+
+// 2. Any year is entered through the keyboard. Write a function to determine whether the year is a leap year or not. Leap years ..., 2012, 2016, 2020, …
+
+
+
+// function LeapYear(year){
+//         var y = 2012;
+//         if(!year)
+//         {
+//                 alert("Please Enter Year");
+//                 window.location.reload();
+//         }
+//         else{
+               
+
+//                         if(year == y || year == (y+4) || year ==(y+8))
+//                         {
+//                                 alert("Leap Year");
+//                         }
+//                         else{
+//                                 alert("Not a Leap Year");
+//                         }
+              
+//         }
+
+
+// }
+// var year = +prompt("Enter the year to determine its a Leap Year or not ");
+// LeapYear(year);
+
+
+
+// 3. If the lengths of the sides of a triangle are denoted by a, b, and c, then area of triangle is given by area =  (S − a)(S − b)(S − c) where, S = ( a + b + c ) / 2 Calculate area of triangle using 2 functions
+
+
+// var a = +prompt("Enter 1st Side of Triangle");
+// var b =+prompt("Enter the 2nd side of the Triangle");
+// var c =+prompt("Enter the 3rd side of Triangle");
+
+// function Area(s){
+
+//         var area = (s - a) * (s - b) * (s - c);
+//         alert("Area Of the Triangle is "+ area);
+
+// }
+// function CalculateS()
+// {
+
+// var s = (a + b + c)/2;
+// alert("S Of the Area is "+ s);
+// return s;
+// }
+
+
+// Area(CalculateS(a,b,c));
+
+
+
+// 4. Write a function that receives marks received by a student in 3 subjects and returns the average and percentage of these marks. there should be 3 functions one is the mainFunction and other are for average and percentage. Call those functions from mainFunction and display result in mainFunction.
+
+
+
+// function mainFunction()
+// {
+//         var NumbersArr=[] , SubjectsArr=[], totalObt = 0;
+//         for(var i = 0 ; i < 3; i++)
+//         {
+
+//                 SubjectsArr.push(prompt("Enter Your "+(i+1)+" Subject Name"));
+//         }
+//         for(var i = 0 ; i < 3; i++)
+//         {
+
+//                 NumbersArr.push(+prompt("Enter Your Marks in "+SubjectsArr[i]+" Subject Name"));
+//         }
+
+// for(var i = 0 ; i < 3; i++)
+// {
+//         console.log("Marks in "+SubjectsArr[i]+" = "+NumbersArr[i]);
+// }
+// for(var i =0 ; i < 3; i++)
+// { 
+//         totalObt += NumbersArr[i]; 
+
+// }
+
+// if( !NumbersArr[0] || !NumbersArr[1] || !NumbersArr[2])
+//         {
+//                 alert("Enter the Obtained Marks Of All Three Subjects");
+//                 window.location.reloadI();
+//         }
+// else        {
+
+//         console.log("Total Obtained Marks "+totalObt);
+//         console.log("Average Of Obtained Marks "+Average(totalObt));
+//         console.log("Percentage is "+ Percentage(Average(totalObt))+"%") ;
+        
+     
+// } 
+// }
+
+// function Average(totalObt)
+// {
+//        var average = totalObt / 3;
+//        return average;
+
+// }
+// function Percentage(average)
+// {
+//         var percentage =(( average *3)/300)*100;
+//         return percentage;
+
+// }
+// mainFunction()
+
+
+
+
+// 5. You have learned the function indexOf. Code your own custom function that will perform the same functionality.You can code for single character as of now.
+
+
+// 6. Write a function to delete all vowels from a sentence. Assume that the sentence is not more than 25 characters long.
+
+// function deleteVowels(str)
+// {
+
+// for(var i = 0; i < str.length; i++ )
+// {
+//         // if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'){
+//         //         str.splice(i,1);
+//         // }
+// }
+// //  str.join().replace(/,/g,',');
+// var string = JSON.stringify(str)
+// //  str.replace(","," ");
+// console.log(string);
+// }
+
+// var sentence = prompt("Enter the sentence");
+// var str =[15];
+
+// str =  sentence.split('');
+
+
+// deleteVowels(str);
+
+// 7. Write a function with switch statement to count the number of occurrences of any two vowels in succession in a line of text. For example, in the sentence “Pleases read this application and give me gratuity” Such occurrences are ea, ea, ui.
+// 8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters.
+// 9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour.
+// 10. A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the
+// keyboard in hundreds, find the total number of currency notes of each denomination the cashier will have to give to the withdrawer.
+
+
+
+
+
+
+// ******************************-- END --*************************
+
+
+// 1. Show an alert box on click on a link.
+
+//Done in index.html
+
+
+// 2. Display some Mobile images in browser. On click on an image Show the message in alert to user.
+
+
+// function addToCart()
+// {
+//         alert("Thank You For Purchasing iPhone Product");
+// }
+
+
+
+// 3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted.
+
+
+// function deleteData(e)
+// {
+//         e.parentNode.parentNode.remove();
+    
+// }
+
+
+
+// 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout.
+
+//done in html
+
+// 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.
+
+
+
+
+// ************************** EVENTS (49-52) **********************
+
+
+// 1. Create a signup form and display form data in your web page on submission.
+
+
+// 2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read
+// more” button, full detail of that particular item will be displayed.
+
+
+
+// function showDetails(num){
+//         var p = document.getElementsByTagName('p');
+//         // console.log();
+//         console.log(p)
+//         for(var i =0 ; i < p.length; i++)
+//         {
+//         if( (i+1) == num)
+//         {
+
+//                 p[i].style.display='block';
+//                 console.log(p[i])
+//         }
+//         }
+
+                
+// }
+
+
+// 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row.
+
+function deleteData(e){
+        e.parentNode.parentNode.remove();
+
+
+}
+function editData(e)
+{
+        console.log(e.parentNode.parentNode.firstChild);
+}
