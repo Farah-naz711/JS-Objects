@@ -2526,12 +2526,106 @@
 
 // 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row.
 
-function deleteData(e){
-        e.parentNode.parentNode.remove();
+// function deleteData(e){
+//         e.parentNode.parentNode.remove();
 
 
-}
-function editData(e)
-{
-        console.log(e.parentNode.parentNode.firstChild);
-}
+// }
+// function editData(e)
+// {
+//         console.log(e.parentNode.parentNode.firstChild);
+// }
+
+
+
+
+
+//*************************** DOM *********************************
+// CH 58 to 67
+
+
+// 1. Consider you have following code snippet:(Copy it in your HTML file)
+/* <div>
+<h1> DOM </h1>
+<div id=”form-content” class=”content”>
+<label for=”first-name”>First Name</label>
+<input type=”text” id=”first-name” />
+<label for=”last-name”>Last Name</label>
+<input type=”text” id=”last-name” />
+<label for=”email”>Email</label>
+<input type=”text” id=”email” />
+</div>
+<div id=”main-content” class=”content”>
+<p class=”render”> First Name : Alex</p>
+<p class=”render” id=”lastName”>Last Name: Bank</p>
+<p class=”render”> Email : alexbank@example.com</p>
+<p class=”render”> Country : Pakistan </p>
+<p class=”render”> contact : +92 300 1234567</p>
+</div>
+</div> */
+// i. Get element of id “main-content” and assign them in a variable.
+// ii. Display all child elements of “main-content” element.
+// iii. Get all elements of class “render” and show their innerHTML
+// in browser.
+// iv. Fill input value whose element id first-name using javascript.
+// v. Repeat part iv for id ”last-name” and “email”.
+
+
+// i
+// var mainContent = document.getElementById('main-content');
+// // ii
+// for(var i=0; i<mainContent.length; i++)
+// document.write(mainContent.childNodes[i]+"<br>");
+
+// var render = mainContent.getElementsByClassName('render');
+
+// // iii
+// for(var i=0; i<render.length; i++)
+
+// document.write(render[i].innerHTML+"<br>");
+// // iv.
+// var firstName = document.getElementById('first-name');
+
+// // firstName.value= "Farah ";
+
+// // // // v.
+// // var lastName = document.getElementById('last-name');
+// // lastName.value = 'Naz';
+// // var email = document.getElementById('email');
+// // email.value = 'aahmadkhan156@gmail.com';
+
+
+// // 2. use HTML code of question 1 and show the result on browser.
+
+// // i. What is node type of element having id “form-content”.
+// var formContent = document.getElementById('form-content').nodeType;
+// document.write("<br>"+formContent);
+// // ii. Show node type of element having id “lastName” and its child node.
+
+// document.write("<br>"+document.getElementById('lastName').nodeType);
+// document.write("<br>"+document.getElementById('lastName').innerText.nodeType);
+
+
+
+// // iii. Update child node of element having id “lastName”.
+// var updated = document.getElementById('lastName').innerHTML='Updated Value'
+// document.write("<br>"+updated)
+// // console.log(updated.innerHTML=' fatah');
+
+
+// // iv. Get First and last child of id “main-content”.
+
+// var firstChild =document.getElementById('main-content').firstChild ;
+// var lastChild = document.getElementById('main-content').lastChild;
+// // document.write("First Child Of Id 'main-content' "+firstChild +"<br>"+" Last Child Of Id 'main-content' "+lastChild +"<br>");
+// // console.log(firstChild);
+// // console.log(lastChild)
+// // v. Get next and previous siblings of id “lastName”.
+
+// console.log('Next Sibling of id "lastName"', document.getElementById('lastName').nextSibling)
+// console.log('Previous Sibling of id "lastName"', document.getElementById('lastName').previousSibling);
+
+// // vi. Get parent node and node type of element having id “email”
+
+// console.log('Parent Node of ELement having id "email" ', document.getElementById('email').parentNode);
+// console.log('Node Type of ELement having id "email" ', document.getElementById('email').nodeType);
