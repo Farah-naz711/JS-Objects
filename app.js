@@ -2460,6 +2460,10 @@
 // ******************************-- END --*************************
 
 
+
+// **************************** EVENTS ****************************
+// *********************** Assignment # 43-48 *****************
+
 // 1. Show an alert box on click on a link.
 
 //Done in index.html
@@ -2493,6 +2497,28 @@
 // 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.
 
 
+// function Counter(action){
+
+//         var count = Number(document.getElementById('div').innerHTML), dec , num;
+//         if(action=='increase')
+//         {
+//                 count = count + 1;
+//                 console.log(count)
+//                 document.getElementById('div').innerHTML = count;
+//                 // inc = document.getElementById('div');
+//                 // console.log(num.innerHTML =inc + 1);
+                
+//         }
+//         else
+//         if (action =='decrease'){
+//                 count = count -1;
+//                 document.getElementById('div').innerHTML = count;
+//         }
+//         else {
+//                 return ;
+//         }
+// }
+
 
 
 // ************************** EVENTS (49-52) **********************
@@ -2500,6 +2526,38 @@
 
 // 1. Create a signup form and display form data in your web page on submission.
 
+
+// function signUpInfo(){
+
+//         var usernameOREmail = document.getElementById('usernameOREmail');
+//         var p1 = document.createElement('p');
+//         var p2 = document.createElement('p');
+//         var p3 = document.createElement('p');
+//         var p4 = document.createElement('p');
+//         var h2 = document.createElement('h2');
+
+     
+//         p1.appendChild(document.createTextNode('UserName / Email'));
+//         p3.appendChild(document.createTextNode('Password'));
+
+        
+//         p2.appendChild(document.createTextNode(usernameOREmail.value));
+
+//         var password = document.getElementById('password');
+
+//         p4.appendChild(document.createTextNode(password.value));
+//         h2.appendChild(document.createTextNode('SignUp Data'))
+//         var div = document.getElementById('data');
+
+//         data.appendChild(h2);
+//         data.appendChild(p1);
+//         data.appendChild(p2);
+//         data.appendChild(p3);
+//         data.appendChild(p4);
+
+
+
+// }
 
 // 2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read
 // more” button, full detail of that particular item will be displayed.
@@ -2526,15 +2584,6 @@
 
 // 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row.
 
-// function deleteData(e){
-//         e.parentNode.parentNode.remove();
-
-
-// }
-// function editData(e)
-// {
-//         console.log(e.parentNode.parentNode.firstChild);
-// }
 
 
 

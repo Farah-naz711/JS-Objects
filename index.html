@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Document</title>
 
     <!-- Question 7 -->
@@ -16,11 +17,18 @@
 <body>
 <!-- <script src="app.js"></script> -->
 
-<!--Evnets Question # 1-->
+<!--Evnets(43-38) Question # 1 Started-->
+
 <!-- <a href="javascript:void(0)" onclick="alert('Alert After Clicking on link')">CLick this link to show alert</a> -->
 
+<!--Evnets(43-38) Question # 1 Ended-->
 
-<!--Evnets Question # 2-->
+
+
+
+
+
+<!--Evnets(43-38) Question # 2-->
 
 <!-- <section class="container bg-light  cards-cotainer p-4">
     <h1 class="text-info mb-4">iPhone LookUp</h1>
@@ -80,11 +88,11 @@
 
 </div>
 </section> -->
-<!--Chapter #Events Question 2 : Ended-->
+<!--Chapter #Events(43-38) Question 2 : Ended-->
 
 
 
-<!--Chapter #Events Question 3 : started-->
+<!--Chapter #Events(43-38) Question 3 : started-->
 
 <!-- <section class="container-fluid table-sec">
 
@@ -160,29 +168,80 @@
 
 </table>
 </section> -->
-<!--Chapter #Events Question 3 : Ended-->
+<!--Chapter #Events(43-38) Question 3 : Ended-->
 
-<!--Chapter #Events Question 4 : started-->
+
+
+
+<!--Chapter #Events(43-38) Question 4 : started-->
+
 <!-- <section class="container img-contaier ">
     <h1 >Image Change On Hover</h1>
     <img src="./images/imgchange2.jpg"  onmouseover="console.log(this.src='./images/imgToChange2.jpg')" onmouseout="console.log(this.src='./images/imgchange2.jpg')">
 
 </section> -->
-<!--Chapter #Events Question 4 : Ended-->
+
+<!--Chapter #Events(43-38) Question 4 : Ended-->
 
 
-<!--Chapter #Events Question 5 : Started-->
+
+
+
+<!--Chapter #Events ( 43-48) Question 5 : Started-->
+
+<!-- <div  class="container w-50 bg-light p-5" >
+  <h2>Counter</h2>
+  <h1 id="div">
+    0
+  </h1>
+  <button class="btn btn-primary" onclick="Counter('increase')">Increase</button>
+  <button class="btn btn-primary" onclick="Counter('decrease')">Decrease</button> 
+</div> -->
+
+<!--Chapter #Events (  43-48) Question 5 : Ended-->
+
+
+<!-- ***************************** EVENTS (CH 43-48) ENDED******************************-->
+
+
+
+
+<!-- ***************************** EVENTS (CH 49-52) STARTED******************************-->
+
+<!--Chapter #Events (49-52)Question 1 Started-->
 <!-- 
-<h1></h1>
+<section class="d-flex justify-content-center align-items-center sign-up-sec">
+  <div class="contanier w-50 bg-light outer-box d-flex justify-content-center align-items-center flex-column p-4">
+    <h1>SIGN UP</h1>
 
-<button class="btn btn-primary" onclick="Counter('increase')">Increase</button>
-<button class="btn btn-primary" onclick="Counter('decrease')">Decrease</button> -->
+      <div class="sign-up-div">
+        <i class="fa-solid fa-user"></i> <input type="text" required maxlength="12"  placeholder="Username Or Email"  id="usernameOREmail">
+      </div>
+      <div class="sign-up-div">
+        <i class="fa-solid fa-lock"></i><input  type="password" id="password" maxlength="8" required placeholder="Password (8 charactes long)">
+        
+      </div>
+     
+        
+     
+      <button class="btn btn-primary mt-3" onclick="signUpInfo()">SignUp</button>
+  </div>
+
+</section>
+<div id="data">
+
+</div> -->
 
 
-<!--Chapter #Events Question 5 : Ended-->
+<!--Chapter #Events (49-52)Question 1 Ended-->
+
+
+
+
 
 
 <!--Chapter #Events (49-52)Question 2 Started-->
+
 
 
 <!-- <section class="container bg-light  showDetails-container p-4">
@@ -243,7 +302,10 @@
 
 </div>
 </section> -->
+
 <!--Chapter #Events(49 - 52) Question 2 : Ended-->
+
+
 
 
 
@@ -251,116 +313,16 @@
 <!--Chapter #Events(49 - 52) Question 3: Started-->
 
 
-<!-- <section class="container-fluid table-sec">
-
-    <h1 class="my-4">Student Database</h1>
-    <table class="container"> 
-    <thead>
-        <th>Index</th>
-        <th>Name</th>
-        <th>Class</th>
-        <th>Delete </th>
-        <th>Edit </th>
 
 
-    </thead>
-    <tr>
-        <td>1</td>
-        <td>Atiqa</td>
-        <td>9</td>
-        <td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td>
-        <td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td>
-
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Hadiqa</td>
-        <td>12</td>
-        <td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td>
-        <td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td>
-
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Nazia</td>
-        <td>10</td>
-        <td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td>
-        <td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td>
-
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Mahira</td>
-        <td>9</td>
-        <td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td>
-        <td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td>
-
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Azan</td>
-        <td>9</td>
-        <td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td>
-        <td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td>
-
-    </tr
-    ><tr>
-        ><td>6</td>
-        ><td>Atqa</td>
-        ><td>9</td>
-        ><td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td>
-        ><td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td>
-
-    </tr
-    ><tr
-        ><td>7</td
-        ><td>Atiqa</td
-        ><td>9</td
-        ><td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td
-        ><td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td
-
-        ></tr>
-    <tr
-        ><td>8</td
-        ><td>Sumaiya</td
-        ><td>12</td
-        ><td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td
-        ><td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td
-
-        ></tr
-    ><tr
-        ><td>9</td
-        ><td>Azlan</td
-        ><td>11</td
-        ><td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td
-        ><td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td
-
-    ></tr
-    ><tr
-    
-    ><td>10</td
-        ><td>Aniqa</td
-        ><td>12</td
-        ><td><button class="btn btn-primary" onclick="deleteData(this)">Delete</button></td
-        ><td><button class="btn btn-primary" onclick="editData(this)">Edit</button></td
-
-        ></tr>
-
-</table>
-</section>  -->
 <!--Chapter #Events Question 3 : Ended-->
 
-<!--Chapter #Events Question 4 : started-->
-<!-- <section class="container img-contaier ">
-    <h1 >Image Change On Hover</h1>
-    <img src="./images/imgchange2.jpg"  onmouseover="console.log(this.src='./images/imgToChange2.jpg')" onmouseout="console.log(this.src='./images/imgchange2.jpg')">
 
-</section>
 
-Chapter #Events(49 - 52) Question 3 : Ended-->
+<!-- Chapter #Events(49 - 52) Question 3 : Ended -->
 
 <!-- Chapter #DOM(58 to 67) Question 3 : Ended--> 
-<div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id=”first-name”/><label for="last-name">Last Name</label><input type="text" id="last-name"/><label for="email">Email</label> <input type="text" id="email"/></div><div id="main-content" class="content"><p class="render">First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render">Email : alexbank@example.com</p><p class="render">Country : Pakistan </p><p class="render">contact : +92 300 1234567</p></div></div><hr>
+<!-- <div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id=”first-name”/><label for="last-name">Last Name</label><input type="text" id="last-name"/><label for="email">Email</label> <input type="text" id="email"/></div><div id="main-content" class="content"><p class="render">First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render">Email : alexbank@example.com</p><p class="render">Country : Pakistan </p><p class="render">contact : +92 300 1234567</p></div></div><hr> -->
 
  <!-- alert("Hello World");    -->
 </body>
