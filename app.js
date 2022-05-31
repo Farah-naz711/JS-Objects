@@ -2421,32 +2421,57 @@
 // 5. You have learned the function indexOf. Code your own custom function that will perform the same functionality.You can code for single character as of now.
 
 
+
 // 6. Write a function to delete all vowels from a sentence. Assume that the sentence is not more than 25 characters long.
+
+
 
 // function deleteVowels(str)
 // {
 
+        
 // for(var i = 0; i < str.length; i++ )
 // {
-//         // if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'){
-//         //         str.splice(i,1);
-//         // }
+//         if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u'){
+//                 str.splice(i,1);
+//         }
 // }
-// //  str.join().replace(/,/g,',');
-// var string = JSON.stringify(str)
-// //  str.replace(","," ");
-// console.log(string);
+// str = str.join()
+// var  newStr= str.replace(/,/g,'');
+// document.write('</br></br>Your Entered String Without Vowels : '+newStr.bold())
 // }
 
-// var sentence = prompt("Enter the sentence");
 // var str =[15];
 
-// str =  sentence.split('');
+
+// var str = prompt("Enter the sentence").toLowerCase();
+// if(str.length>0 && str.length<=25)
+// {
+//         document.write("Your Entered String : "+str.bold());
+//         str =  str.split('');
+
+//         deleteVowels(str);
+// }
+// else{
+//         alert('String Must be 25 characters long')
+// }
 
 
-// deleteVowels(str);
+
+
 
 // 7. Write a function with switch statement to count the number of occurrences of any two vowels in succession in a line of text. For example, in the sentence “Pleases read this application and give me gratuity” Such occurrences are ea, ea, ui.
+
+
+var str = prompt("Enter String");
+occurrenceOfVowels(str.split(''));
+
+function occurrenceOfVowels(str)
+{
+        console.log(str)
+}
+
+
 // 8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters.
 // 9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour.
 // 10. A cashier has currency notes of denominations 10, 50 and 100. If the amount to be withdrawn is input through the
@@ -2584,6 +2609,84 @@
 
 // 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row.
 
+// var num = 1;
+
+// function studentData(){
+
+        
+        
+//         if(num ===11)
+//         {
+
+//                 alert("Can't Store data of more than 10 students");
+//         }
+//         else{
+
+//                 var name = document.getElementById('name');
+//                 var stdClass = document.getElementById('class');
+//          var table = document.getElementById('table');
+         
+//          var tr = table.insertRow();
+//         var td1 = tr.insertCell();
+//         var td2 =tr.insertCell();
+//         var td3 =tr.insertCell();
+//         var td4 = tr.insertCell();
+// var td5 = tr.insertCell();
+
+// var editbtn = document.createElement('button');
+// var dltbtn = document.createElement('button');
+
+// editbtn.appendChild(document.createTextNode('Edit'));
+// dltbtn.appendChild(document.createTextNode('Delete'));
+
+// editbtn.setAttribute('class','btn btn-primary');
+// dltbtn.setAttribute('class','btn btn-danger');
+
+// editbtn.setAttribute('onclick','editData(this)');
+// dltbtn.setAttribute('onclick','deleteData(this)');
+
+
+
+
+// td1.innerHTML = num++;
+// td2.innerHTML = name.value;
+// td3.innerHTML = stdClass.value;
+// td4.appendChild(editbtn);
+// td5.appendChild(dltbtn);
+
+
+
+
+
+// name.value = '';
+// stdClass.value = '';
+
+
+// }
+// //else ended
+// }
+// function editData(e)
+// {
+//         var updatedName = prompt('Edit Name',e.parentNode.parentNode.firstElementChild.innerHTML);
+//         e.parentNode.parentNode.firstElementChild.innerHTML = updatedName;
+//         var updatedClass = prompt('Edit Class ',e.parentNode.parentNode.firstElementChild.nextElementSibling.innerHTML)
+//         e.parentNode.parentNode.firstElementChild.nextElementSibling.innerHTML = updatedClass;
+// }
+// function deleteData(e)
+// {
+//         var ind = Number(e.parentNode.parentNode.firstElementChild.innerHTML); //index of the row that we wanna delete
+//         e.parentNode.parentNode.remove();
+//         for(var i =(ind-1) ; i<$('#table tr').length; i++)
+//         {
+      
+
+//                         table.firstElementChild.children[i].firstElementChild.innerHTML = ind;
+//                         ind+=1;
+                        
+//         }
+
+        
+// }
 
 
 
