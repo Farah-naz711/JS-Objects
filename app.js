@@ -2463,13 +2463,13 @@
 // 7. Write a function with switch statement to count the number of occurrences of any two vowels in succession in a line of text. For example, in the sentence “Pleases read this application and give me gratuity” Such occurrences are ea, ea, ui.
 
 
-var str = prompt("Enter String");
-occurrenceOfVowels(str.split(''));
+// var str = prompt("Enter String");
+// occurrenceOfVowels(str.split(''));
 
-function occurrenceOfVowels(str)
-{
-        console.log(str)
-}
+// function occurrenceOfVowels(str)
+// {
+//         console.log(str)
+// }
 
 
 // 8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters.
@@ -2781,3 +2781,206 @@ function occurrenceOfVowels(str)
 
 // console.log('Parent Node of ELement having id "email" ', document.getElementById('email').parentNode);
 // console.log('Node Type of ELement having id "email" ', document.getElementById('email').nodeType);
+
+
+
+
+
+
+
+// ************************** OBJECTS ***********************************//
+
+
+
+// Q1:Suppose You have an array of object
+// var itemsArray = [
+// {name:”juice”,price:”50”, quantity:”3”},
+// {name:”cookie”,price:”30”, quantity:”9”},
+// {name:”shirt”,price:”880”, quantity:”1”},
+// {name:”pen”,price:”100”, quantity:”2”}];
+// Calculate total price of each item and all items;
+
+
+// var itemsArray = [
+
+//         {name : "juice",
+//         price :50,
+//         quantity : 3
+//         },
+//         {name : "cookie",
+//         price :30,
+//         quantity : 9
+//         },
+//         {name : "shirt",
+//         price :880,
+//         quantity : 1
+//         },
+//         {name : "pen",
+//         price :100,
+//         quantity : 2
+//         }
+// ], totalPrice = 0 , totalQuantity = 0
+// for(var i = 0 ; i < itemsArray.length; i++)
+// {
+
+//         totalPrice += itemsArray[i].price; 
+//         totalQuantity += itemsArray[i].quantity;
+// }
+// console.log("totalPrice ",totalPrice)
+// console.log("totalQuantity ",totalQuantity)
+
+
+
+
+// Q2. Create an object with properties name, email, password, age, gender, city, country. Check if age and country properties exist in object or not. Also check firstName and lastName properties in object.
+
+
+
+// var obj = {
+
+//         name : 'farah Naz',
+//         email : 'aahmadkhan156@gmail.com',
+//         password : 7791111,
+//         age : 30,
+//         gender : 'Female',
+//         city : 'Karachi',
+//         country : "Pakistani"
+// }
+// if(obj.hasOwnProperty('age') && obj.hasOwnProperty('country'))
+// {
+
+//         console.log('Age and Country Properties are available in objects');
+//  if(obj.hasOwnProperty('firstName') && obj.hasOwnProperty('lastName'))
+// {
+//         console.log('firstName and lastName Properties available in object')
+
+// }
+// else{
+
+//         console.log('firstName and Last Name properties are not available')
+// }
+// }
+// else {
+//         console.log('Age , country , firstName and LastName properties are not in the object')
+// }
+
+
+
+
+// Q3. Create a constructor function with some properties. Now create multiple records using the constructor.
+
+
+// function Constructor(name,age,gender,field)
+// {
+//         this.name = name,
+//         this.age = age,
+//         this.gender = gender,
+//         this.field = field
+
+// }
+
+
+// alert("Enter the data of the 1st Student");
+// var obj1 = new  Constructor(prompt("Enter your Name"),+prompt('Enter Your age'),prompt("Gender?"),prompt("Enter your field"))
+
+// alert("Enter the data of the 2nd Student");
+
+// var obj2 = new Constructor(prompt("Enter your Name"),+prompt('Enter Your age'),prompt("Gender?"),prompt("Enter your field"));
+
+// alert("Enter the data of the 3rd Student");
+
+// var obj3 = new Constructor(prompt("Enter your Name"),+prompt('Enter Your age'),prompt("Gender?"),prompt("Enter your field"));
+
+// alert("Enter the data of the 4th Student");
+
+// var obj4 = new Constructor(prompt("Enter your Name"),+prompt('Enter Your age'),prompt("Gender?"),prompt("Enter your field"))
+
+// alert("Enter the data of the 5th Student");
+
+// var obj5 = new Constructor(prompt("Enter your Name"),+prompt('Enter Your age'),prompt("Gender?"),prompt("Enter your field"))
+
+// console.log(obj1);
+// console.log(obj2);
+// console.log(obj3);
+// console.log(obj4);
+// console.log(obj5);
+
+
+
+// Q4. Suppose you want to check population of your area, their educations and professions. Create a constructor function which holds following
+// properties:
+// Name, gender, address, education, profession,
+// Enter all records one by one.
+// Hint:
+//  use select box for education and profession,
+//  use radio box for gender
+
+// Bonus : use can use localStorage to save records.
+
+
+
+
+// function Constructor(name , gender , address , education , profession) {  
+
+
+//         this.name = name;
+//         this.gender = gender;
+//         this.address = address;
+//         this.education = education ;
+//         this.profession = profession;
+       
+//         }
+
+
+        
+//         var inputname = document.getElementById('inputName'),
+//         education = document.getElementById('education'),
+//          address = document.getElementById('address'),
+//          gender = document.getElementsByName('gender'),
+//          profession = document.getElementById('profession');
+//          var genderValue;
+// console.log(inputname.value)
+
+//        function collectInfo()
+//        {
+
+
+
+//          console.log("Name :",inputname.value);
+//          for(var i = 0 ; i<gender.length; i++)
+//          {
+//                  if(gender[i].checked)
+//                  {
+//                          genderValue = gender[i].value;
+//                          console.log("Gender :",gender[i].value)
+//                          gender[i].checked = false
+        
+//                  }
+
+//        }
+
+//          console.log("Education :",education.value)
+
+
+//          console.log("Address :",address.value)
+//          console.log("Profession :", profession.value)
+        
+
+// createConstructorInstance();
+
+// inputname.value = " ";
+// address.value  = " ";
+// education.value = ""
+// profession.value = " ";
+
+// }
+// function createConstructorInstance(){
+
+
+//         var data1 = new Constructor(inputname.value,genderValue,education.value,address.value,profession.value);
+//         console.log(data1)
+// }
+      
+
+
+// ************************** CONSTRUCTOR CHAPTER'S OBJECT ENDED *****************************
